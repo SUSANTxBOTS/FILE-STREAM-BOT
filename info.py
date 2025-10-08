@@ -19,15 +19,15 @@ SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1003146170668"))
 
 # add admin IDs 11111 2222 3333 and add auth channel IDs -100XXX -100XXX -100XXX
 ADMINS = list(map(int, environ.get('ADMINS', '8156708830').split()))  # List of admin user IDs
-AUTH_CHANNEL = list(map(int, environ.get("AUTH_CHANNEL", "-1002645335073 -1003175653769").split()))  # Allowed channels for authorization
+AUTH_CHANNEL = list(map(int, environ.get("AUTH_CHANNEL", "-1003049004717").split()))  # Allowed channels for authorization
 
 # username add without @
-OWNER_USERNAME = environ.get("OWNER_USERNAME", 'NoOneIsMine)  # Owner's username
+OWNER_USERNAME = environ.get("OWNER_USERNAME", 'xAkairo')  # Owner's username
 BOT_USERNAME = environ.get("BOT_USERNAME", 'FileXStream_Robot')  # Bot's username
 
 # 🔗 Channel & Support Links
-CHANNEL = environ.get('CHANNEL', 'https://t.me/OrbinexXBotz')  # Updates channel
-SUPPORT = environ.get('SUPPORT', 'https://t.me/OrbinexX_Society')  # Support group
+CHANNEL = environ.get('CHANNEL', 'https://t.me/ThronexCodex')  # Updates channel
+SUPPORT = environ.get('SUPPORT', 'https://t.me/Thronex_Chats')  # Support group
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/')  # Verification guide link
 HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/')  # File access guide link
 
@@ -38,12 +38,12 @@ ENABLE_LIMIT = environ.get("ENABLE_LIMIT", True)  # Enable file limits
 BATCH_VERIFY = environ.get("BATCH_VERIFY", False)  # Verify files in batch
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))  # Enable channel shortlink creation
 MAINTENANCE_MODE = environ.get("MAINTENANCE_MODE", False)  # Put bot in maintenance
-PROTECT_CONTENT = environ.get('PROTECT_CONTENT', False)  # Enable content protection
+PROTECT_CONTENT = environ.get('PROTECT_CONTENT', True)  # Enable content protection
 PUBLIC_FILE_STORE = environ.get('PUBLIC_FILE_STORE', True)  # Public or private file visibility
 BATCH_PROTECT_CONTENT = environ.get('BATCH_PROTECT_CONTENT', False)  # Batch file protection
 
 # 🔗 Shortlink Configuration
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'techvjlink.site')  # Shortener site
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')  # Shortener site
 SHORTLINK_API = environ.get('SHORTLINK_API', 'd73e70a35dc3877fa14afbf51fa8ec312c94780c')  # API key for shortlink
 
 # 💾 MongoDB Connection Information
@@ -74,7 +74,7 @@ WORKERS = int(getenv('WORKERS', '4'))  # Number of async workers
 MULTI_CLIENT = False  # Enable multi-client handling (if needed)
 
 # 🔧 App/Heroku Configuration
-name = str(environ.get('name', 'avbotz'))  # Project name
+name = str(environ.get('name', 'filestream1'))  # Project name
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
