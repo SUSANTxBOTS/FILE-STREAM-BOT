@@ -21,15 +21,7 @@
       "description": "Set this to True if you don't want the bot to crash",
       "value": "True"
     },
-    "APP_NAME": {
-      "description": "Heroku app name (optional)"
-    },
-    "API_ID": {
-      "description": "Get this value from https://my.telegram.org"
-    },
-    "API_HASH": {
-      "description": "Get this value from https://my.telegram.org"
-    },
+
     "BOT_TOKEN": {
       "description": "Get this from @BotFather"
     },
